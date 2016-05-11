@@ -1,0 +1,85 @@
+@import "bourbon/bourbon";
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Samba;
+
+  src: url('SAMBAHOLLYC.otf');
+  src: url('SAMBAHOLLYC.otf') format('truetype');
+}
+
+h2 {
+  font-family: Samba;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+video {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 100vw;
+  height: 100%;
+  margin-top: -75px;
+}
+
+.mainTitle {
+  img {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 95%;
+    height: 90vh;
+
+    // margin-top: -100px;
+  }
+  position: relative;
+  h2 {
+  position: absolute;
+  width: 100%;
+  bottom: 42%;
+  text-align: center;
+  font-size: 110px;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  }
+  h4 {
+    position: absolute;
+    width: 100%;
+    bottom: 62%;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+  }
+}
+
+.Navbar {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  ul {
+    z-index: 1;
+    display: flex;
+    li {
+      list-style: none;
+      margin: 0 auto;
+      color: white;
+      a {
+        color: navy;
+        font-size: 2em;
+        text-decoration: none;
+      }
+    }
+  }
+}
